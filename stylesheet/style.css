@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    border: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+/* Estilos para mobile */
+@media (max-width: 768px) {
+    .cartao {
+        width: 100%;
+        /* background-color: aqua; */
+        /* height: 99vh; */
+    }
+
+    .cabecalho {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .perfil {
+        margin-top: 1em;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .fotoPerfil {
+        width: 30%;
+        height: 30%;
+        border: 1px solid rgb(238, 77, 45);
+
+        border-radius: 50%;
+    }
+
+    .titlePerfil {
+        font-size: 12pt;
+    }
+
+    .social {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    .colecao {
+        margin-top: 2em;
+
+        display: grid;
+        grid-template-columns: repeat(2, minmax(150px, 0.5fr));
+        justify-content: center;
+        gap: 20px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .produtos {
+        background-color: rgba(224, 216, 216, 0.589);
+        border-radius: 20px;
+        height: 150px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .produtos span {
+        color: rgb(238, 77, 45);
+    }
+
+    .produtos .bntSell {
+        background-color: rgb(238, 77, 45);
+        margin-left: 1em;
+        border: none;
+        padding: .3em;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+    }
+}
+
+/* Estilos para PC */
+@media (min-width: 769px) {
+    .cartao {
+        background-color: darkcyan;
+        height: 80vh;
+    }
+}
